@@ -93,7 +93,7 @@ void bubble_sort(int colecao[], int tamanho){
 	}
 }
 
-void insert_sort(int colecao[], int tamanho){
+void insertion_sort(int colecao[], int tamanho){
 	
 	int i, j, elemento_auxiliar;
 	for(i=1; i<tamanho; i++){

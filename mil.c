@@ -87,7 +87,10 @@ int main()
     imprime_vetor(vet,TAM); 
 
 
-    printf("--------------------------------------------------------------------\n"); 
+    printf("--------------------------------------------------------------------\n");
+
+        printf("\n"); 
+ 
 
     printf("INSERTION SORT\n");
 
@@ -129,6 +132,8 @@ int main()
 
     printf("--------------------------------------------------------------------\n"); 
 
+    printf("\n"); 
+
     printf("MERGE SORT\n");
 
     gerar_crescente(vet,TAM); 
@@ -137,7 +142,7 @@ int main()
     printf("\n"); 
 
 
-     
+    merge(vet,0,TAM-1,TAM);  
     imprime_vetor(vet,TAM); 
 
 
@@ -150,7 +155,7 @@ int main()
     printf("\n"); 
 
 
-    selection_sort(vet,TAM); 
+    merge(vet,0,TAM-1,TAM);  
     imprime_vetor(vet,TAM); 
 
 
@@ -163,7 +168,49 @@ int main()
     printf("\n"); 
 
 
-    selection_sort(vet,TAM); 
+    merge(vet,0,TAM-1,TAM);  
+    imprime_vetor(vet,TAM); 
+
+
+    printf("--------------------------------------------------------------------\n"); 
+    printf("\n"); 
+
+    
+    printf("QUICK SORT\n");
+
+    gerar_crescente(vet,TAM); 
+    imprime_vetor(vet,TAM); 
+
+    printf("\n"); 
+
+
+    quicksort(vet,0,TAM-1);  
+    imprime_vetor(vet,TAM); 
+
+
+    printf("--------------------------------------------------------------------\n"); 
+
+
+    carrega_vetor_aleatorio(vet,TAM,2); 
+    imprime_vetor(vet,TAM); 
+
+    printf("\n"); 
+
+
+    quicksort(vet,0,TAM-1);  
+    imprime_vetor(vet,TAM); 
+
+
+    printf("--------------------------------------------------------------------\n"); 
+
+
+    gerar_decrescente(vet,TAM); 
+    imprime_vetor(vet,TAM); 
+
+    printf("\n"); 
+
+
+    quicksort(vet,0,TAM-1);  
     imprime_vetor(vet,TAM); 
 
 
