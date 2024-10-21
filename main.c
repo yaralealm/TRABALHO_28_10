@@ -1,16 +1,68 @@
 #include <stdio.h> 
 #include "funcoes.h"
-#define size_1 1000
-#define size_2 100000
-#define size_3 1000000
+#define tam1 50
+#define tam2 50
+#define tam3 50
 
 
-int main(int argc, char const *argv[])
+
+int main()
 {
-    int v1[size_1]; 
-    int v2[size_2]; 
-    int v3[size_3];
 
-    
+    //BUBBLE SORT 
+    // MIL 
+    int vet[tam1]; 
+
+    printf("VETOR EM ORDEM CRESCENTE\n"); 
+
+
+   gerar_crescente(vet,tam1); 
+
+   imprime_vetor(vet,tam1); 
+
+    printf("\n"); 
+
+   bubble_sort(vet,tam1); 
+
+   imprime_vetor(vet,tam1);  
+
+     printf("--------------------------------------------------------------------\n"); 
+
+    printf("VETOR EM ORDEM DECRESCENTE\n"); 
+
+
+    gerar_decrescente(vet,tam1); 
+
+    imprime_vetor(vet,tam1); 
+
+    printf("\n"); 
+
+    bubble_sort(vet,tam1); 
+
+    imprime_vetor(vet,tam1); 
+
+     printf("--------------------------------------------------------------------\n"); 
+
+    printf("VETOR EM ORDEM ALEATORIA\n"); 
+
+
+     carrega_vetor_aleatorio(vet,tam1,2); 
+
+        imprime_vetor(vet,tam1); 
+
+        printf("\n"); 
+
+     bubble_sort(vet,tam1); 
+
+     imprime_vetor(vet,tam1); 
+
+    printf("--------------------------------------------------------------------\n"); 
+
+
+   // DEZ MIL
+
+
+   //UM MILHAO
+  
     return 0;
 }
