@@ -1,3 +1,5 @@
+//TESTE!!
+
 #include <stdio.h>
 #include <time.h>
 #include "funcoes.h"
